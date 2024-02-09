@@ -1,0 +1,60 @@
+courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
+13,,,,,-,Distributed and parallel programming,-,Course,-,,-,,-
+13,0,,,,-,Objective,-,Course objective,-,,-,,-
+13,0,1,,,-,Obj1,-,Course objective,-,Understanding,-,"Explain and describe the taxonomy of parallel and distributed systems, and the role and functionality of the different components that appear in these computing systems.",-
+13,0,2,,,-,Obj2,-,Course objective,-,Applying,-,"Program small-scale applications using the main concepts of parallel processing and programming models of Pthreads, OpenMP, CUDA, and MPI.",-
+13,0,3,,,-,Obj3,-,Course objective,-,Understanding,-,Explain and describe basic programming models for parallel and distributed computing systems.,-
+13,0,4,,,-,Obj4,-,Course objective,-,Applying,-,Get familiar with the programming models of cloud and decentralized systems.,-
+13,0,5,,,-,Obj5,-,Course objective,-,Analyzing,-,Analyze the performance results of parallel and distributed systems and evaluate their results.,-
+13,0,6,,,-,Obj6,-,Course objective,-,Analyzing,-,Conduct a literature study on a selected topic of parallel and distributed architecture.,-
+13,1,,,,-,Parallel and distributed system introduction,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,1,,,-,Computing_system_terminology,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,2,,,-,Why_parallel_computing?,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,2,1,,-,Moore's_law,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,2,2,,-,Power_wall,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,2,3,,-,Dennard_Scaling,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,3,,,-,Performance_and_speedup,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,3,1,,-,Hardware_metrics,-,Parallel and concurrency introduction,-,Understanding,-,"Metrics, e.g., latency, throughput, speed up, scaling",-
+13,1,3,2,,-,Scaling_and_scaling_law,-,Parallel and concurrency introduction,-,Applying,-,,-
+13,1,3,2,1,-,Amdahl's_law,-,Parallel and concurrency introduction,-,Applying,-,,-
+13,1,3,2,2,-,Gustafson’s_law,-,Parallel and concurrency introduction,-,Applying,-,,-
+13,1,3,3,,-,Efficiency,-,Parallel and concurrency introduction,-,Applying,-,,-
+13,1,4,,,-,Parallel_Architecture,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,4,1,,-,Michael_Flynn_Texonomy,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,4,2,,-,Parallelism options,-,Parallel and concurrency introduction,-,Understanding,-,"options include CPU level, e.g., multi core, many core, machine level, e.g., shared memory, distributed memory.",-
+13,1,5,,,-,Parallel_Application,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,1,5,1,,-,Terminology,-,Parallel and concurrency introduction,-,Understanding,-,"e.g., amount of work, span, speed of concurrency, average degree of concurrency, computational, communication, synchronization, granularity, locality.",-
+13,1,5,2,,-,Design_method,-,Parallel and concurrency introduction,-,Understanding,-,,-
+13,2,,,,-,Multi_threading,-,Multi-thread programming,-,Understanding,-,,-
+13,2,1,,,-,Programming model,-,Multi-thread programming,-,Understanding,-,,-
+13,2,1,1,,-,POSIX_threads ,-,Multi-thread programming,-,Applying,-,,-
+13,2,1,2,,-,OpenMP,-,Multi-thread programming,-,Applying,-,,-
+13,2,2,,,-,Race condition,-,Multi-thread programming,-,Analyzing,-,,-
+13,2,3,,,-,Parallelism options,-,Multi-thread programming,-,Applying,-,,-
+13,3,,,,-,GPU,-,GPU programming,-,Understanding,-,,-
+13,3,1,,,-,GPU introduction,-,GPU programming,-,Understanding,-,,-
+13,3,1,1,,-,GPU programming model,-,GPU programming,-,Understanding,-,,-
+13,3,2,,,-,CUDA,-,GPU programming,-,Applying,-,,-
+13,3,2,1,,-,Concepts,-,GPU programming,-,Understanding,-,"concepts include thread, block and Grid",-
+13,3,2,2,,-,Programming model,-,GPU programming,-,Applying,-,,-
+13,3,2,2,,-,Optimization,-,GPU programming,-,Applying,-,"e.g., using streaming, acynchronious copy, increase occupancy, avoid divergency, smart synchronization, memory coalescing",-
+13,3,2,3,,-,Performance reasoning,-,GPU programming,-,Analyzing,-,,-
+13,4,,,,-,MPI,-,MPI programming,-,Applying,-,,-
+13,4,1,,,-,MPI introduction,-,MPI programming,-,Understanding,-,,-
+13,4,2,,,-,MPI programming  model,-,MPI programming,-,Understanding,-,,-
+13,4,3,,,-,MPI communication,-,MPI programming,-,Understanding,-,,-
+13,4,4,,,-,MPI Data Model,-,MPI programming,-,Understanding,-,,-
+13,4,5,,,-,Derived data type,-,MPI programming,-,Understanding,-,,-
+13,5,,,,-,Cloud_DApp_Application,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,1,,,-,Cloud,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,1,1,,-,Virtualization,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,1,2,,-,Service,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,2,,,-,DApp,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,2,1,,-,Decentralization,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,2,2,,-,Blockchain,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,2,2,1,-,Hash,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,2,2,2,-,Address,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,2,2,3,-,Consensus,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,2,2,4,-,Incentive,-,Cloud and decentralized computing,-,Understanding,-,,-
+13,5,2,2,5,-,Smart contract,-,Cloud and decentralized computing,-,Applying,-,,-
+13,5,2,2,6,-,DApp,-,Cloud and decentralized computing,-,Applying,-,,-

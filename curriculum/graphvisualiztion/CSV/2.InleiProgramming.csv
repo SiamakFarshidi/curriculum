@@ -1,0 +1,51 @@
+courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
+2,,,,,-,Inleiding Programmeren,-,Course,-,,-,5062INPR6Y,-
+2,0,,,,-,Objective,-,Course objective,-,,-,,-
+2,0,1,,,-,Obj1,-,Course objective,-,Analyzing,-,Een computationeel probleem analyseren en in handelbare stukjes opdelen,-
+2,0,2,,,-,Obj2,-,Course objective,-,Creating,-,Oplossingen implementeren in de programmeertaal C,-
+2,0,3,,,-,Obj3,-,Course objective,-,Applying,-,Leesbare C-code schrijven,-
+2,0,4,,,-,Obj5,-,Course objective,-,Applying,-,Kunnen werken met pointers; begrip van stack en heap,-
+2,0,5,,,-,Obj7,-,Course objective,-,Applying,-,Fouten in programma's opsporen en verbeteren,-
+2,0,6,,,-,Obj8,-,Course objective,-,Understanding,-,Specificaties voor code lezen en precies implementeren,-
+2,0,7,,,-,Obj9,-,Course objective,-,Applying,-,Gebruik maken van online en offline referentiemateriaal,-
+2,0,8,,,-,Obj11,-,Course objective,-,Analyzing,-,Design principes kennen en kunnen toepassen,-
+2,1,,,,-,C,-,C introduction,-,Understanding,-,,-
+2,1,1,,,-,gcc,-,C introduction,-,Understanding,-,,-
+2,1,2,,,-,Types,-,C introduction,-,Understanding,-,,-
+2,1,3,,,-,Variable,-,C introduction,-,Understanding,-,,-
+2,1,4,,,-,Branch,-,C introduction,-,Understanding,-,,-
+2,1,5,,,-,Loop,-,C introduction,-,Understanding,-,,-
+2,2,,,,-,Basic ingridient,-,C introduction,-,Understanding,-,,-
+2,2,1,,,-,Type conversion,-,C introduction,-,Understanding,-,,-
+2,2,2,,,-,Expression,-,C introduction,-,Understanding,-,,-
+2,2,3,,,-,Numerical operation,-,C introduction,-,Understanding,-,,-
+2,3,,,,-,Function,-,CFunction,-,Understanding,-,,-
+2,3,1,,,-,scope,-,CFunction,-,Understanding,-,,-
+2,3,2,,,-,lifecycle,-,CFunction,-,Understanding,-,,-
+2,3,3,,,-,Control-flow,-,Control flow,-,Understanding,-,,-
+2,4,,,,-,Pointer,-,Point and arrary,-,Understanding,-,,-
+2,5,,,,-,String,-,Point and arrary,-,Understanding,-,,-
+2,5,1,,,-,Arrary,-,Point and arrary,-,Understanding,-,,-
+2,5,2,,,-,Array copy,-,Point and arrary,-,Understanding,-,,-
+2,5,3,,,-,Multi dimension array,-,Point and arrary,-,Understanding,-,,-
+2,6,,,,-,I/O,-,Input and output,-,Understanding,-,,-
+2,6,1,,,-,Stream,-,Input and output,-,Understanding,-,,-
+2,6,2,,,-,Error handling,-,Input and output,-,Understanding,-,,-
+2,7,,,,-,Self-defined types,-,Self-defined type,-,Understanding,-,,-
+2,7,1,,,-,Enum,-,Self-defined type,-,Understanding,-,,-
+2,7,2,,,-,Union,-,Self-defined type,-,Understanding,-,,-
+2,7,3,,,-,Struct,-,Self-defined type,-,Understanding,-,,-
+2,8,,,,-,Memory,-,Memory,-,Understanding,-,,-
+2,8,1,,,-,Static,-,Memory,-,Understanding,-,,-
+2,8,2,,,-,Global,-,Memory,-,Understanding,-,,-
+2,9,,,,-,Modulization,-,Program module,-,Understanding,-,,-
+2,9,1,,,-,Link,-,Program module,-,Understanding,-,,-
+2,9,2,,,-,Library,-,Program module,-,Understanding,-,,-
+2,10,,,,-,C++,-,C++ introduction,-,Understanding,-,,-
+2,10,1,,,-,Object oriented,-,C++ introduction,-,Understanding,-,,-
+2,10,2,,,-,Constructor,-,C++ introduction,-,Understanding,-,,-
+2,10,3,,,-,Type hierarhy,-,C++ introduction,-,Understanding,-,,-
+2,10,4,,,-,Tempalte,-,C++ introduction,-,Understanding,-,,-
+2,11,,,,-,Debug,-,Debug,-,Understanding,-,,-
+2,11,1,,,-,Principles,-,Debug,-,Understanding,-,,-
+2,11,2,,,-,Tools,-,Debug,-,Understanding,-,,-

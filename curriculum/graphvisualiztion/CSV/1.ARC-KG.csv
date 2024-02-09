@@ -1,0 +1,50 @@
+courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
+1,,,,,-,Architecture and computer organization,-,Course,-,,-,,-
+1,0,,,,-,Objective,-,Course objective,-,,-,,-
+1,0,1,,,-,Obj1,-,Course objective,-,Remembering,-,"aangeven uit welke deelsystemen een computersysteem is opgebouwd, uitleggen wat het gedrag van elke deelsysteem is, uitleggen hoe deze deelsystemen samen het gedrag van het computersysteem bepalen",-
+1,0,2,,,-,Obj2,-,Course objective,-,Analyzing,-,de executie tijden vergelijken van een gegeven programma op verschillende computer systemen gespecificeerd door bepaalde karakteristieken,-
+1,0,3,,,-,Obj3,-,Course objective,-,Understanding,-,kan de hiërarchische organisatie van een computer beschrijven aan de hand van de deelsystemen,-
+1,0,4,,,-,Obj4,-,Course objective,-,Applying,-,binaire representaties lezen en schrijven van integers en floating point nummers,-
+1,0,5,,,-,Obj5,-,Course objective,-,Understanding,-,architectuur bouwen uit de basis componenten,-
+1,0,6,,,-,Obj6,-,Course objective,-,Applying,-,deze programmeren met een assembleertaal,-
+1,0,7,,,-,Obj7,-,Course objective,-,Understanding,-,traceren van de doorgang van een opeenvolging van instructies door een multi-stage pipeline,-
+1,0,8,,,-,Obj8,-,Course objective,-,Applying,-,de data- en control hazards identificeren en oplossen in een programma geschreven in een assembleertaal,-
+1,0,9,,,-,Obj9,-,Course objective,-,Understanding,-,de code en data tussen de niveaus van een memory hiërarchie traceren,-
+1,0,10,,,-,Obj10,-,Course objective,-,Understanding,-,zich nauwkeurig uitdrukken met gebruik van passende vakterminologie,-
+1,0,11,,,-,Obj11,-,Course objective,-,Applying,-,nauwgezet en volhoudend debuggen door analytisch denken,-
+1,1,,,,-,Computer abstraction and technology,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,1,,,-,Computer abstraction,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,2,,,-,Computer evolution,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,3,,,-,Instruction set architecture,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,4,,,-,High level language,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,5,,,-,Performance,-,Computer abstraction and technology,-,Understanding,-,,-
+1,2,,,,-,Instructions: Language of the Computer,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,2,1,,,-,Binary number,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,2,2,,,-,Logic design,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,2,2,1,,-,Logic operation,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,2,2,2,,-,Logic gates,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,3,,,,-,Arithmetic for Computers,-,Arithmetic for Computers,-,Understanding,-,,-
+1,3,1,,,-,Operation on integer,-,Arithmetic for Computers,-,Understanding,-,,-
+1,3,1,1,,-,Addition and subtraction,-,Arithmetic for Computers,-,Understanding,-,,-
+1,3,1,2,,-,Multiplication and division,-,Arithmetic for Computers,-,Understanding,-,,-
+1,3,1,3,,-,Dealing with overflow,-,Arithmetic for Computers,-,Understanding,-,"concepts include thread, block and Grid",-
+1,3,2,,,-,Floating-point real number,-,Arithmetic for Computers,-,Understanding,-,,-
+1,4,,,,-,The Processor,-,Processor,-,Understanding,-,,-
+1,4,1,,,-,CPU performance factors,-,Processor,-,Understanding,-,,-
+1,4,1,1,,-,Instruction count,-,Processor,-,Understanding,-,,-
+1,4,1,2,,-,CPI and cycle time,-,Processor,-,Understanding,-,,-
+1,4,2,,,-,MIPS,-,Processor,-,Understanding,-,,-
+1,4,3,,,-,Hazards,-,Processor,-,Understanding,-,,-
+1,4,3,1,,-,Structure hazards,-,Processor,-,Understanding,-,,-
+1,4,3,2,,-,Data hazards,-,Processor,-,Understanding,-,,-
+1,4,3,3,,-,Control hazards,-,Processor,-,Understanding,-,,-
+1,5,,,,-,Memory Hierarchy,-,Memory Hierarchy,-,Understanding,-,,-
+1,5,1,,,-,Memory wall,-,Memory Hierarchy,-,Understanding,-,,-
+1,5,1,1,,-,Principle of locality,-,Memory Hierarchy,-,Understanding,-,,-
+1,5,1,1,1,-,Temporal locality,-,Memory Hierarchy,-,Understanding,-,,-
+1,5,1,1,2,-,Spatial locality,-,Memory Hierarchy,-,Understanding,-,,-
+1,5,1,2,,-,DRAM organization,-,Memory Hierarchy,-,Understanding,-,,-
+1,6,,,,-,Multiprocessors,-,Multiprocessors,-,Understanding,-,,-
+1,6,1,,,-,Flynn taxonomy,-,Multiprocessors,-,Understanding,-,,-
+1,6,2,,,-,Amdahl's law,-,Multiprocessors,-,Understanding,-,,-
+1,6,3,,,-,Scaling,-,Multiprocessors,-,Understanding,-,,-
