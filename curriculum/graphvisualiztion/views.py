@@ -3,14 +3,15 @@ import csv
 import os
 import json
 from difflib import SequenceMatcher
-#-------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------
+
 def similar(a, b, threshold=0.75):
     """
     Checks if two strings are similar based on a similarity threshold.
     """
     matcher = SequenceMatcher(None, a, b)
     return matcher.ratio() >= threshold
-#-------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------
 def generateSearchSpace(csv_files,folder_path):
     searchSpace={}
     id=0
@@ -21,7 +22,7 @@ def generateSearchSpace(csv_files,folder_path):
                 searchSpace[id]={'csv_file':csv_file,'row':row}
                 id=id+1
     return searchSpace
-#-------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------
 def detectSimilarNodes(searchSpace):
     similarNodes={}
     id=0
@@ -32,7 +33,8 @@ def detectSimilarNodes(searchSpace):
                     similarNodes[id]={'node1':searchSpace[travers1],'node2':searchSpace[travers2]}
                     id=id+1
     return similarNodes
-#-------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------
+
 def buildSimilarityGraph(csv_files,folder_path):
     dataset_nodes=[]
     dataset_edges=[]
@@ -42,7 +44,8 @@ def buildSimilarityGraph(csv_files,folder_path):
     dataset_nodes,dataset_edges = createSimilarityGraph(similarNodes)
 
     return dataset_nodes,dataset_edges
-#-------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------
+
 def graph(request):
 
     try:
@@ -81,12 +84,12 @@ def graph(request):
         "dataset_edges":json.dumps(dataset_edges),
         "courseTitles":courseTitles
     })
-#-------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------
 def mergeList(first_list, second_list):
     resulting_list = list(first_list)
     resulting_list.extend(x for x in second_list if x not in resulting_list)
     return resulting_list
-#-------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------
 
 def contentmgmt(request):
        return render(request,'contentmgmt.html') 
@@ -203,8 +206,7 @@ def createSimilarityGraph(similarNodes):
         parentID1= courses[node1['csv_file']]
 
         #-----------------------------------------------------------------
-        node2= similarNodes[similarPair]['node2']
-        
+        node2= similarNodes[similarPair]['node2']        
         if node2['csv_file'] not in courses:
             id=id+1
             nodes.append(createCourseNode(id,node2['csv_file'][:len(node2['csv_file'])-4]))
@@ -215,7 +217,8 @@ def createSimilarityGraph(similarNodes):
 
         #-----------------------------------------------------------------
         id=id+1
-        nodes.append(createNode(id,"<"+row1[6]+","+ row2[6]+">","","","",10,colors[4]))
+        nodes.append(createNode(id,row1[6]+","+ row2[6],"","","",10,colors[4]))
+
         edges.append(createEdge(parentID2,id))
         edges.append(createEdge(parentID1,id))
 
