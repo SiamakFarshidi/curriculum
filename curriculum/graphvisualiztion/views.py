@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from django.shortcuts import render
 import csv
 import os
@@ -28,7 +29,7 @@ def detectSimilarNodes(searchSpace):
     id=0
     for travers1 in searchSpace:
         for travers2 in searchSpace:
-            if (searchSpace[travers1]['csv_file'] != searchSpace[travers2]['csv_file']):
+            if ((searchSpace[travers1]['csv_file'] != searchSpace[travers2]['csv_file'])) and ("Obj" not in searchSpace[travers1]['row'][6]) and ("Obj" not in searchSpace[travers2]['row'][6]):
                 if similar(searchSpace[travers1]['row'][6],searchSpace[travers2]['row'][6]):
                     similarNodes[id]={'node1':searchSpace[travers1],'node2':searchSpace[travers2]}
                     id=id+1
@@ -55,7 +56,7 @@ def graph(request):
 
     dataset_nodes={}
     dataset_edges={}
-    courseTitles=['Similarity graph']
+    courseTitles=[]
     folder_path=os.getcwd()+"\\graphvisualiztion\\CSV\\"
     csv_files = get_csv_files_in_folder(folder_path)
 
@@ -127,22 +128,18 @@ def get_csv_files_in_folder(folder_path):
             csv_files.append(file)
     return csv_files
 #---------------------------------------------------------------------------------------------------------------------
-def createNode(id, cap, url, tooltip, img, size=12,color='white'):
+def createNode(id, cap, url, tooltip, img ,shape='image', size=12,color='white'):
 
-    tool=""
-    for t in tooltip:
-        if tool!="":
-            tool= tool+" . "+t
-        else:
-            tool=t
+    if len(cap)>30:
+        tooltip=cap+"\n"+tooltip
 
     newNode={
         'id': id,
         'url': url.replace('json',''),
         'label': cap[:30] + (cap[30:] and '...'),
-        'title': tool[:100]  + (tool[100:] and '...'),
+        'title': tooltip[:100]  + (tooltip[100:] and '...'),
         'color':color,
-        'shape': 'image',
+        'shape': shape,
         'image': img,
         'size':size,
     }
@@ -152,37 +149,91 @@ def createEdge(from_node_id, to_node_id):
     Newedge={'from': from_node_id, 'to': to_node_id, 'title': '' }    
     return Newedge
 #---------------------------------------------------------------------------------------------------------------------
-def createCourseNode(id,label):
+def createCourseNode(id,label,tooltip):
     Course={
         'id': id,
         'url':'N/A',
         'widthConstraint': { 'maximum': 150,'minimum': 100  },
         'heightConstraint': { 'minimum': 70, 'maximum': 100 },
+        'title': tooltip[:100]  + (tooltip[100:] and '...'),
         'label': label,
         'x': -150,
         'y': -150,
-        'shape': "box",
+        'shape': "circle",
     }
     return Course
 #---------------------------------------------------------------------------------------------------------------------
 def createGraph(courseTitle,csv_data,id):
-    colors=['BlueViolet','DeepPink','Lime','orange','Indigo','DarkSlateBlue','DarkMagenta',"brown"]
+    colors=['BlueViolet','DeepPink','Lime','orange','Indigo','DarkSlateBlue','DarkMagenta',"brown","lightgray"]
     nodes=[]
     edges=[]
-    nodes.append(createCourseNode(id,courseTitle[:len(courseTitle)-4]))
+    nodes.append(createCourseNode(id,courseTitle[:len(courseTitle)-4],csv_data[1][6]))
     CourseID=id
     id=id+1
+    
+    Prev_courseid	= NULL
+    Prev_chapterid	= NULL
+    Prev_sectionid	= NULL
+    Prev_unitid	    = NULL
+    Prev_subunitid   = NULL
+    Prev_topic       = NULL
+    Prev_chapter     = NULL
+    Prev_CognitiveLevel = NULL
+    Prev_description = NULL
+
+    cnt=0
+    
     for row in csv_data:
-        #print(row)
-        parentID=id
-        for i in range(6,14):
-            if  row[i] =="-" or row[i] =="": continue
-            nodes.append(createNode(id,row[i],"","","",10,colors[i-6]))
-            if parentID==id:
+        
+        if cnt<2: #ignore the first two rows (title)
+            cnt=cnt+1
+            continue    
+                
+        Cur_courseid	= row[0]
+        Cur_chapterid	= row[1]
+        Cur_sectionid	= row[2]
+        Cur_unitid	    = row[3]
+        Cur_subunitid   = row[4]
+        Cur_topic       = row[6]
+        Cur_chapter     = row[8]
+        Cur_CognitiveLevel = row[10]
+        Cur_description = row[12]
+        
+        if not(Prev_courseid):
+            parentID=id
+            nodes.append(createNode(id,Cur_topic,"",Cur_description,"","box",10,colors[3]))
+            edges.append(createEdge(CourseID,id))
+        else:                       
+            if (Cur_chapterid != Prev_chapterid):
+                parentID=id
+                nodes.append(createNode(id,Cur_topic,"",Cur_description,"","box",10,colors[3]))
                 edges.append(createEdge(CourseID,id))
             else:
+                nodes.append(createNode(id,Cur_topic,"",Cur_description,"","image",10,colors[0]))
                 edges.append(createEdge(parentID,id))
-            id=id+1
+            
+        Prev_courseid	= Cur_courseid
+        Prev_chapterid	= Cur_chapterid
+        Prev_sectionid	= Cur_sectionid
+        Prev_unitid	    = Cur_unitid
+        Prev_subunitid   = Cur_subunitid
+        Prev_topic       = Cur_topic
+        Prev_chapter     = Cur_chapter
+        Prev_CognitiveLevel = Cur_CognitiveLevel
+        Prev_description = Cur_description
+        id=id+1
+
+
+        #print(row)
+        #parentID=id 
+        #for i in range(6,14):
+        #    if  row[i] =="-" or row[i] =="": continue
+        #    nodes.append(createNode(id,row[i],"","","",10,colors[i-6]))
+        #    if parentID==id:
+        #        edges.append(createEdge(CourseID,id))
+        #    else:
+        #        edges.append(createEdge(parentID,id))
+        #    id=id+1
     return nodes,edges,id
 #---------------------------------------------------------------------------------------------------------------------
 def createSimilarityGraph(similarNodes):
@@ -199,7 +250,7 @@ def createSimilarityGraph(similarNodes):
         node1= similarNodes[similarPair]['node1']
         if node1['csv_file'] not in courses:
             id=id+1          
-            nodes.append(createCourseNode(id,node1['csv_file'][:len(node1['csv_file'])-4]))
+            nodes.append(createCourseNode(id,node1['csv_file'][:len(node1['csv_file'])-4],""))
             courses[node1['csv_file']]=id
 
         row1 = node1['row']
@@ -209,7 +260,7 @@ def createSimilarityGraph(similarNodes):
         node2= similarNodes[similarPair]['node2']        
         if node2['csv_file'] not in courses:
             id=id+1
-            nodes.append(createCourseNode(id,node2['csv_file'][:len(node2['csv_file'])-4]))
+            nodes.append(createCourseNode(id,node2['csv_file'][:len(node2['csv_file'])-4],""))
             courses[node2['csv_file']]=id
 
         row2 = node2['row']

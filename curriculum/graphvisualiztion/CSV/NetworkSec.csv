@@ -1,0 +1,101 @@
+courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
+12,,,,,-,Architecture and computer organization,-,Course,-,,-,,-
+12,0,,,,-,Objective,-,Course objective,-,,-,,-
+12,0,1,,,-,Obj1,-,Course objective,-,Remembering,-,,-
+12,0,2,,,-,Obj2,-,Course objective,-,Analyzing,-,,-
+12,0,3,,,-,Obj3,-,Course objective,-,Understanding,-,,-
+12,0,4,,,-,Obj4,-,Course objective,-,Applying,-,,-
+12,0,5,,,-,Obj5,-,Course objective,-,Understanding,-,,-
+12,0,6,,,-,Obj6,-,Course objective,-,Applying,-,,-
+12,0,7,,,-,Obj7,-,Course objective,-,Understanding,-,,-
+12,0,8,,,-,Obj8,-,Course objective,-,Applying,-,,-
+12,0,9,,,-,Obj9,-,Course objective,-,Understanding,-,,-
+12,0,10,,,-,Obj10,-,Course objective,-,Understanding,-,,-
+12,0,11,,,-,Obj11,-,Course objective,-,Applying,-,,-
+12,1,,,,-,Computer Networks and the Internet,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,1,,,-,Internet introduction,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,1,1,,-,The Internet,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,1,2,,-,The birth of the Internet,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,2,,,-,Current Internet structure,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,3,,,-,Network performance,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,3,1,,-,Delay,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,3,2,,-,Loss,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,3,3,,-,Throughput,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,4,,,-,Protocols layers,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,5,,,-,Encapsulation,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,6,,,-,Application layer protocols,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,7,,,-,Sockets,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,8,,,-,HTTP,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,1,9,,,-,SMTP,-,Computer Networks and the Internet,-,Understanding,-,,-
+12,2,,,,-,Application layer,-,Application layer,-,Understanding,-,,-
+12,2,1,,,-,DNS,-,Application layer,-,Understanding,-,,-
+12,2,1,1,,-,DNS introduction,-,Application layer,-,Understanding,-,,-
+12,2,1,2,,-,DNS records,-,Application layer,-,Understanding,-,,-
+12,2,1,3,,-,DNS security,-,Application layer,-,Understanding,-,,-
+12,3,,,,-,Transport layer,-,Transport layer,-,Understanding,-,,-
+12,3,1,,,-,Transport layer protocols,-,Transport layer,-,Understanding,-,,-
+12,3,1,1,,-,UDP,-,Transport layer,-,Understanding,-,,-
+12,3,1,2,,-,TCP,-,Transport layer,-,Understanding,-,,-
+12,3,2,,,-,Flow control,-,Transport layer,-,Understanding,-,,-
+12,3,3,,,-,BDP,-,Transport layer,-,Understanding,-,,-
+12,3,4,,,-,Error recovery,-,Transport layer,-,Understanding,-,,-
+12,3,5,,,-,Refinements through options,-,Transport layer,-,Understanding,-,,-
+12,3,6,,,-,Congestion control,-,Transport layer,-,Understanding,-,,-
+12,3,7,,,-,TCP fairness,-,Transport layer,-,Understanding,-,,-
+12,4,,,,-,Network Layer,-,Network Layer,-,Understanding,-,,-
+12,4,1,,,-,Functions of the network layer,-,Network Layer,-,Understanding,-,,-
+12,4,1,1,,-,Forwarding,-,Network Layer,-,Understanding,-,,-
+12,4,1,2,,-,Routing,-,Network Layer,-,Understanding,-,,-
+12,4,2,,,-,Datagram networks,-,Network Layer,-,Understanding,-,,-
+12,4,3,,,-,IP protocol,-,Network Layer,-,Understanding,-,,-
+12,4,3,1,,-,IPv4,-,Network Layer,-,Understanding,-,,-
+12,4,3,1,1,-,Fragmentation,-,Network Layer,-,Understanding,-,,-
+12,4,3,2,,-,IPv6 protocol,-,Network Layer,-,Understanding,-,,-
+12,4,3,2,1,-,IPv6 addressing,-,Network Layer,-,Understanding,-,,-
+12,4,4,,,-,ICMP,-,Network Layer,-,Understanding,-,,-
+12,4,5,,,-,DHCP,-,Network Layer,-,Understanding,-,,-
+12,4,6,,,-,NAT,-,Network Layer,-,Understanding,-,,-
+12,4,7,,,-,Basic features of the routing control plane,-,Network Layer,-,Understanding,-,,-
+12,4,7,1,,-,Routing,-,Network Layer,-,Understanding,-,,-
+12,4,7,2,,-,Subnets,-,Network Layer,-,Understanding,-,,-
+12,4,7,3,,-,Addressing and routing,-,Network Layer,-,Understanding,-,,-
+12,4,7,4,,-,Intra-domain routing,-,Network Layer,-,Understanding,-,,-
+12,4,8,1,,-,Routing algorithms,-,Network Layer,-,Understanding,-,,-
+12,4,8,1,1,-,Link state algorithm,-,Network Layer,-,Understanding,-,,-
+12,4,8,1,2,-,Distance vector algorithm,-,Network Layer,-,Understanding,-,,-
+12,4,9,,,-,Graphs and trees,-,Network Layer,-,Understanding,-,,-
+12,4,10,,,-,interior gateway protocols (IGP),-,Network Layer,-,Understanding,-,,-
+12,4,10,1,,-,RIP: Routing Information Protocol,-,Network Layer,-,Understanding,-,,-
+12,4,10,2,,-,OSPF: Open Shortest Path First,-,Network Layer,-,Understanding,-,,-
+12,4,10,3,,-,IS-IS,-,Network Layer,-,Understanding,-,,-
+12,4,10,4,,-,EIGRP: Interior Gateway Routing Protocol,-,Network Layer,-,Understanding,-,,-
+12,4,11,,,-,BGP(Border Gateway Protocol),-,Network Layer,-,Understanding,-,,-
+12,4,11,1,,-,BGP introduction,-,Network Layer,-,Understanding,-,,-
+12,4,11,2,,-,BGP security,-,Network Layer,-,Understanding,-,,-
+12,4,12,,,-,What's inside a router?,-,Network Layer,-,Understanding,-,,-
+12,4,12,1,,,Router architectures,-,Network Layer,-,Understanding,-,,-
+12,4,12,2,,,Quality of Service principles,-,Network Layer,-,Understanding,-,,-
+12,4,12,3,,,Diffserv and IntServ,-,Network Layer,-,Understanding,-,,-
+12,4,12,3,1,,Differentiated Services,-,Network Layer,-,Understanding,-,,-
+12,4,12,3,2,,Integrated services,-,Network Layer,-,Understanding,-,,-
+12,4,12,4,,,"Policing, shaping and scheduling",-,Network Layer,-,Understanding,-,,-
+12,4,12,4,,,Resource Reservation Protocol (RSVP),-,Network Layer,-,Understanding,-,,-
+12,5,,,,-,Link layer,-,Link layer,-,Understanding,-,,-
+12,5,1,,,-,Introduction to data link layer,-,Link layer,-,Understanding,-,,-
+12,5,2,,,-,ARP(address resolution protocol),-,Link layer,-,Understanding,-,,-
+12,5,3,,,-,Ethernet,-,Link layer,-,Understanding,-,,-
+12,5,3,1,,-,Ethernet Frame,-,Link layer,-,Understanding,-,,-
+12,5,4,,,-,Switches,-,Link layer,-,Understanding,-,,-
+12,5,5,,,-,Spanning tree protocol,-,Link layer,-,Understanding,-,,-
+12,5,6,,,-,Virtual LANs,-,Link layer,-,Understanding,-,,-
+12,5,7,,,-,Wireless basics,-,Link layer,-,Understanding,-,,-
+12,5,8,1,,-,Radio signals,-,Link layer,-,Understanding,-,,-
+12,5,9,2,,-,Wireless links,-,Link layer,-,Understanding,-,,-
+12,5,10,3,,-,Wireless spectrum,-,Link layer,-,Understanding,-,,-
+12,5,11,4,,-,Wireless networks,-,Link layer,-,Understanding,-,,-
+12,5,12,,,-,Bluetooth,-,Link layer,-,Understanding,-,,-
+12,5,13,,,-,WiFi,-,Link layer,-,Understanding,-,,-
+12,5,13,1,,-,Media access,-,Link layer,-,Understanding,-,,-
+12,5,13,2,,-,Collision avoidance,-,Link layer,-,Understanding,-,,-
+12,5,13,3,,-,DCF,-,Link layer,-,Understanding,-,,-
+12,5,14,,,-,802.11 frames,-,Link layer,-,Understanding,-,,-
