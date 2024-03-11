@@ -1,9 +1,9 @@
-from asyncio.windows_events import NULL
 from django.shortcuts import render
 import csv
 import os
 import json
 from difflib import SequenceMatcher
+NULL=-10000
 #---------------------------------------------------------------------------------------------------------------------
 
 def similar(a, b, threshold=0.75):
